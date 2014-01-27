@@ -1,5 +1,5 @@
 <?php
-/* Auto_dd_upload.php v1.0 
+/* Auto_dropzone.php v1.0 
     author: Bronco
     email: bronco@warriordudimanche.net
     web: http://warriordudimanche.net
@@ -20,7 +20,7 @@
 
     configuration / init
     ----------------------------------------------
-    you can configure outside this script, before the include('auto_dd_upload.php');
+    you can configure outside this script, before the include('auto_dropzone.php');
     with this kind of init:
 
   $auto_dropzone=array(
@@ -252,7 +252,7 @@ if ($_FILES){
 
                 // prepare XMLHttpRequest
                 var xhr = new XMLHttpRequest();
-                xhr.open('POST', 'auto_dd_upload.php');
+                xhr.open('POST', 'auto_dropzone.php');
                 xhr.onload = function() {
                     result.innerHTML += this.responseText;
                     handleComplete(file.size);
@@ -297,4 +297,7 @@ if ($_FILES){
         })();
 
     </script>
-<?php } ?>
+<?php }
+
+
+ ?>
